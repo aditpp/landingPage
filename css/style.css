@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > *{
+    font-family: "Poppins";
+}
+
+/* variables */
+body{
+    margin: 0;
+    --text-light: rgba(243, 244, 246, 0.9);
+    --primary-dark: rgba(55, 65, 81, 1);
+    --secondary-dark: rgba(55, 65, 81, 0.7);
+    --bg-light: rgba(243, 244, 246, 0.3);;
+    --bg-btn: rgba(67, 56, 202, 0.8);
+
+    background-color: var(--bg-light);
+}
+
+
+nav{
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 30%);
+    
+}
+.navbar-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    width: 55px;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    background-color: grey;
+}
+
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2px 0 0 2px;
+    height: 25px;
+    width: 25px;
+    background-color: var(--text-light);
+    border-radius: 50px;
+}
+
+
+input[type="checkbox"]:checked::before{
+    transform: translate(100%);
+}
+
+.navbar-nav li{
+    margin: 0 10px 0 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    margin-right: -20px;
+}
+
+.link{
+    color: black;
+    text-decoration: none !important;
+}
+.link:hover{
+    color: #4458DC;
+}
+
+section .home{
+    min-height: 90vh;
+}
+section .blog{
+    min-height: 90vh;
+}
+
+.team{
+    min-height: 80vh;
+}
+
+
+.box-cv{
+    background: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 80%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.content{
+    padding: 30px;
+}
+.nama{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.adit{
+    color: #4458DC;
+}
+.btn{
+    margin: 5px;
+}
+
+.img-cv{
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    border-bottom: solid 2px #000;
+}
+
+section .about{
+    /* min-height: 95vh; */
+}
+
+.content2{
+    margin-top: 30px;
+}
+
+.portfolio{
+    min-height: 100vh;
+    font-weight: 900;
+}
+.quality{
+    font-weight: 900;
+}
+
+.name {
+    color: blue;
+  }
+  
+  .work {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .about span {
+    font-size: 13px;
+  }
+  
+  .v-profile {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .box {
+    -webkit-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+    -moz-box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+    box-shadow: 13px 12px 5px -10px rgba(196,194,196,0.72);
+  }
+  
+
+.fa {
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 48px;
+}
+.fa:hover{
+    text-decoration: none;
+    color: #4458DC;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .nama {
+        font-size: 40px;
+    }
+    .box-cv{
+        margin-top: 50px;
+    }
+    .home{
+        margin-top: 100px;
+    }
+
+    
+
+    
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    section .home{
+        min-height: 10vh;
+    }
+    .home{
+        margin-top: 50px;
+    }
+    .nama {
+      font-size: 30px;
+    }
+    .box-cv{
+        margin-bottom: 10px;
+    }
+    
+    .img-cv{
+        width: 100%;
+        height: 80%;
+        visibility: hidden;
+    }
+    .img-about{
+        width: 100%;
+    }
+  }
